@@ -6,3 +6,8 @@
 -- INSERT INTO person (name, age) VALUES ("Sayed", 25)
 
 -- ALTER TABLE Test ADD COLUMN food VARCHAR(50) NOT NULL
+-- CREATE TABLE TestUser (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), password VARCHAR(60), email VARCHAR(50))
+-- CREATE TABLE TestUserScores(userID INT PRIMARY KEY, FOREIGN KEY(userID) REFERENCES TestUser(id), game1 INT DEFAULT 0, game2 INT DEFAULT 0)
+
+-- INSERT INTO TestUser(name, password, email) VALUES (%s, %s)
+-- INSERT INTO TestUserScores (userID, game1, game2) VALUES (%s, %s, %s)
